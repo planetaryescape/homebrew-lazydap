@@ -13,25 +13,25 @@ class Lazydap < Formula
   # redundant, and it is, right up to the first prerelease: the URLs carry the
   # version twice and a tag like v0.2.0-rc1 is not something to let a filename
   # parser guess at.
-  version "0.2.0"
+  version "0.2.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/planetaryescape/lazydap/releases/download/v#{version}/lazydap-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "848ed8127df6562e62c2722238e5c2dd58dd5f38ccaf4d3d9d3d87ba9e763a69"
+      sha256 "5f0e5f75b95bc2ea96f5a1e04da52a18affd901d2cab15b10ee32068581b2a8f"
     end
 
     on_intel do
       url "https://github.com/planetaryescape/lazydap/releases/download/v#{version}/lazydap-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "5b5708aea921ab6e9c9629ed3ef44a04d7fca036ba99884d6ff5e1e361acc093"
+      sha256 "15347929c94c010319663707a28d934b797b20768beb73c4d6c0fcbca9afe5d3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/planetaryescape/lazydap/releases/download/v#{version}/lazydap-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5233b6e17c788fbc4d8a7ef884b0b464df772c3fcd1449fb8066ce8e0af69acc"
+      sha256 "03051f53cdcdc9fa5bc4625da792c17dcff83ab7a0993579f4cd19c92458b74a"
     end
   end
 
